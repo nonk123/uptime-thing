@@ -12,12 +12,12 @@ pub fn load() -> Config {
     let path = std::env::var("CONFIG_PATH").unwrap_or_else(|_| {
         let cwd = std::env::current_dir().unwrap();
         let cwd = cwd.to_string_lossy();
-        warn!("CONFIG_PATH unset; using {}/config.json", cwd);
-        String::from("./config.json")
+        warn!("CONFIG_PATH unset; using {}/config.yml", cwd);
+        String::from("./config.yml")
     });
 
     let mut file = File::open(path).expect("to open the config file for reading");
-    serde_json::from_reader(&mut file).expect("to parse the config file")
+    serde_yaml_ng::from_reader(&mut file).expect("to parse the config file")
 }
 
 #[derive(Clone, Deserialize)]

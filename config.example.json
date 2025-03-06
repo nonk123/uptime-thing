@@ -1,9 +1,0 @@
-{
-    "checks": {
-        "testingHttp": {
-            "type": "http",
-            "url": "https://example.com",
-            "interval": "5s"
-        }
-    }
-}

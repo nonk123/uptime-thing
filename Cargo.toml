@@ -10,5 +10,5 @@ log = { version = "^0.4", features = ["std"] }
 pretty_env_logger = "^0.5"
 reqwest = "^0.12"
 serde = { version = "^1", features = ["alloc", "derive"] }
-serde_json = { version = "^1", features = ["alloc"] }
+serde_yaml_ng = "^0.10"
 tokio = { version = "^1", features = ["full"] }

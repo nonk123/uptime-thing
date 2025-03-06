@@ -1,0 +1,5 @@
+checks:
+  testHttp:
+    type: http
+    url: https://example.com
+    interval: 60s
