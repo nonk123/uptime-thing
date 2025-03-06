@@ -11,7 +11,7 @@ Take a look at the [config.yml example](config.example.yml) for more info.
 
 TODOs:
 
-- [V] Switch to YAML for configuration.
+- [x] Switch to YAML for configuration.
 - [ ] Add per-check timeouts.
 - [ ] Store the time series in a SQLite database.
 - [ ] Display real-time statistics in a web UI.
